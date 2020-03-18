@@ -1,14 +1,14 @@
 # This is the main configuration file for Paper.
 # As you can see, there's tons to configure. Some options may impact gameplay, so use
 # with caution, and make sure you know what each option does before configuring.
-# 
+#
 # If you need help with the configuration or have any questions related to Paper,
 # join us in our Discord or IRC channel.
-# 
+#
 # Discord: https://paperdiscord.emc.gs
 # IRC: #paper @ irc.spi.gt ( http://irc.spi.gt/iris/?channels=paper )
-# Website: https://papermc.io/ 
-# Docs: https://paper.readthedocs.org/ 
+# Website: https://papermc.io/
+# Docs: https://paper.readthedocs.org/
 
 verbose: false
 config-version: 20
@@ -67,7 +67,7 @@ world-settings:
     count-all-mobs-for-spawning: false
     disable-ice-and-snow: false
     seed-based-feature-search: true
-    grass-spread-tick-rate: 1
+    grass-spread-tick-rate: 4
     bed-search-radius: 1
     nether-ceiling-void-damage-height: 0
     portal-search-radius: 128
@@ -81,13 +81,13 @@ world-settings:
     baby-zombie-movement-modifier: 0.5
     zombie-villager-infection-chance: -1.0
     all-chunks-are-slime-chunks: false
-    mob-spawner-tick-rate: 1
+    mob-spawner-tick-rate: 2
     disable-teleportation-suffocation-check: false
     water-over-lava-flow-speed: 5
     fix-zero-tick-instant-grow-farms: true
-    use-faster-eigencraft-redstone: false
+    use-faster-eigencraft-redstone: true
     parrots-are-unaffected-by-player-movement: false
-    container-update-tick-rate: 1
+    container-update-tick-rate: 3
     prevent-tnt-from-moving-in-water: false
     non-player-arrow-despawn-rate: -1
     creative-arrow-despawn-rate: -1
@@ -95,15 +95,15 @@ world-settings:
     per-player-mob-spawns: false
     prevent-moving-into-unloaded-chunks: false
     fixed-chunk-inhabited-time: -1
-    max-auto-save-chunks-per-tick: 24
+    max-auto-save-chunks-per-tick: 12
     use-vanilla-world-scoreboard-name-coloring: false
-    optimize-explosions: false
+    optimize-explosions: true
     enable-treasure-maps: true
     treasure-maps-return-already-discovered: false
     duplicate-uuid-resolver: saferegen
     duplicate-uuid-saferegen-delete-range: 32
     filter-nbt-data-from-spawn-eggs-and-related: true
-    max-entity-collisions: 8
+    max-entity-collisions: 2
     disable-creeper-lingering-effect: false
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
@@ -138,7 +138,7 @@ world-settings:
       disable-unloaded-chunk-enderpearl-exploit: true
       disable-sprint-interruption-on-attack: false
       disable-relative-projectile-velocity: false
-      disable-chest-cat-detection: false
+      disable-chest-cat-detection: true
       nerf-pigmen-from-nether-portals: false
       disable-player-crits: false
       disable-end-credits: false
@@ -162,14 +162,14 @@ world-settings:
       refresh-max: 2d
     hopper:
       cooldown-when-full: true
-      disable-move-event: false
+      disable-move-event: true
     alt-item-despawn-rate:
       enabled: false
       items:
         COBBLESTONE: 300
     despawn-ranges:
-      soft: 32
-      hard: 128
+      soft: 28
+      hard: 96
     fishing-time-range:
       MinimumTicks: 100
       MaximumTicks: 600
